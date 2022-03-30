@@ -74,3 +74,15 @@
 - Major risk with Online Learning is that if bad data is fed to the system it can degrade the performance of the model over time and you may have to revert to an earlier working state if there is a drop in performance
 
 ## Instance-Based Versus Model-Based Learning
+- ML Systems can also be classified by how they "genrealize", which is how the system makes prediction on data it hasn't seen before
+### Instance Based Learning
+- Instance Based Learning using a "measure of simalirty" to generalize new examples, as in it looks at the new example and compares how similar it is to other example data
+- Ex. For spam email you can compare the word count of new emails that come in to emails that are classified as spam
+
+### Model Based Learning
+- Model Based Learning is a generalization method to build a model based off the known examples and use that model to make predictions
+- When evaluating your model you use a "utility/fitness function" to determine how good the model is or a "cost function" to determine how bad a model is
+- Training is the process of feeding data to a model and it will work on optimizing the parameters for that model
+
+## Main Challenges of Machine Learning
+
