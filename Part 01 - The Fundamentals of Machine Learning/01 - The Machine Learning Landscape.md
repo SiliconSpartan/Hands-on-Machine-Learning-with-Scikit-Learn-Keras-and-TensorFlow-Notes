@@ -85,4 +85,23 @@
 - Training is the process of feeding data to a model and it will work on optimizing the parameters for that model
 
 ## Main Challenges of Machine Learning
+### Insufficient Quantity of Training Data
+- Data is very important since most algorithms usually need thousands of example to train on before having meaningful results
+- Study showed that very different ML algos performed reasonably the same when given enough data
 
+### Nonrepresentative Training Data
+- The data you want to train on should be representative of the new examples you want the model to predict
+- Too small samples can cause "sampling noise" where data in nonrepresentative by chance
+- Larger sample can have flawed sampling methods and still be nonrepresentative which is known as "sampling bias"
+
+### Poor-Quality Data
+- Bad data can happen as a result of outliers or missing attributes, so you must decided whether to drop these outlier and attributes
+
+### Irrevelant Features
+- Make sure your training data has relevant features
+- Feature Engineering is determining which features are good for training on and involves:
+	- "Feature Selection" is deciding the most useful features to train on in the data
+	- "Feature Extraction" is combining existing features to produce a more useful feature
+	- Creating new features by obtaining new data
+
+### Overfitting the Training Data
