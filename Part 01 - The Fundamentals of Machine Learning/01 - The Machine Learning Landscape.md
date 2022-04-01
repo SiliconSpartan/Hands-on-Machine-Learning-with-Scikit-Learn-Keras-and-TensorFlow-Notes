@@ -105,3 +105,20 @@
 	- Creating new features by obtaining new data
 
 ### Overfitting the Training Data
+- "Overfitting" is when the model performs well on the training data but fails to generalize to non-training data
+- Overfitting can happen when a model is too complex relative to the amount and quality of the data, you can reduce overfitting by:
+	- Gathering more data
+	- Simplify the model with less parameters and a simpler model
+	- Reduce noise in data and improve quality by removing outliers, errors, etc
+- "Regularization" is the process of making a model simpler through contraints to reduce chance of overfitting
+- "Hyper-parameter" is a parameter of a learning algorithm that control how much regularization to apply
+
+### Underfitting the Training Data
+- "Underfitting" is when the model is too simple to learn the underlying structure of the data
+- Can help prevent underfitting by:
+	- More powerful model
+	- Add features to your data
+	- Reducing hyper-parameter for less regularization
+
+## Testing and Validating
+
