@@ -121,4 +121,21 @@
 	- Reducing hyper-parameter for less regularization
 
 ## Testing and Validating
+- An option for testing is to split the data into "training set" and "test set", so after model is done training on training set you can test out new cases with the test set
+- "Generalization Error" is the error rate of the model for new cases
+	- If the training error rate is low on the training set but the generalization error is high then it means the model is overfitted to the data
+
+## Hyperparameter Tuning and Model Selection
+- Comparing generalization errors can be a good way to determine which model to use
+- A possible scenario is that you create a model that performs well on the training set but performs worse on the test set. You could modify the hyperparameter to get a lower error rate for the test set but this can lead to overfitting on the test set
+	- Common solution is to use a validation set:
+		- Set aside part of the training set as the validation set
+		- Train model and fine tune hyperparameters on the reduce training set(original training set - validation set)
+		- Select model that performs best on validation set
+		- Finally retrain the model on the entire training set(reduced training set + validation set)
+- "Cross-Validation" is having multiple smaller validation sets and evaluating the model against each one and averaging out the results
+
+## Data Mismatch
+- The Data the model trains on should be representative of the data you expect to see in production
+
 
